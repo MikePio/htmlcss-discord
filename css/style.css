@@ -1,57 +1,81 @@
+/* General */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */ 
+  font-family: Arial, Helvetica, sans-serif; /* todo provvisorio*/
 }
 
+.standard_button{
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.standard_button:hover {
+  color: #8baaff;
+  box-shadow: 0px 5px 20px rgb(56, 56, 56);
+}
 
 header{
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: #ADD8E6;
-  color: rgb(0, 0, 0);
+  /* background-color: #404EED; */
+  color: rgb(255, 255, 255);
   width: 100%;
   min-height: 70px; /* todo provvisorio*/
   padding-top: 10px;
   padding-bottom: 10px;
+
+  background-image: url(../img/jumbo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 main{
   background-color: rgba(255, 230, 0, 0.296);
   width: 100%;
   min-height: 70px; /* todo provvisorio*/
+
 }
 
 footer{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: end; */
   
   width: 100%;
   background-color: #23272A;
   min-height: 70px; /* todo provvisorio*/ 
   padding-top: 20px;
   padding-bottom: 0;
+  color: rgb(255, 255, 255);
 
 }
 
 
 
-/* header */
+/* * header /////////////////////////////////////////////////////////////////////// */
 
 .container_header{
-  border: black 1px dashed;
+  /* border: black 1px dashed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
   /* padding: 10px; */
-  background-color: #DDA820;
-  width: 60%;
+  /* background-color: #404EED; */
+  /* width: 60%; */
+  /* width: 1200px; */
+  width: 80%;
   min-height: 40px;
 
 
@@ -59,8 +83,8 @@ footer{
 }
 
 #logo_header{
-  border: black 1px dashed;
-  background-color: #DDA820;
+  /* border: black 1px dashed; */
+  /* background-color: #404EED; */
 
   width: 20%;
   min-height: 40px;
@@ -69,36 +93,40 @@ footer{
   /* padding-top: 10px;
   padding-bottom: 10px; */
 
+  /* background-image: url(../img/logo.svg) ;
+  background-repeat: no-repeat; */
+
+  display: flex;
+  justify-content: start;
+  align-content: center;
+
 
 }
 
 header nav{
-  border: black 1px dashed;
-  background-color: #DDA820;
+  /* border: black 1px dashed; */
+  /* background-color: #404EED; */
 
+  /* min-width: 60%; */
   min-width: 60%;
   min-height: 40px;
-  padding: 10px;
+  /* min-height: 55px; */
+  padding: 15px;
+  /* padding: 10px; */
   /* padding-top: 10px;
   padding-bottom: 10px; */
-
-
-
-
 }
 
 nav ul{
   list-style: none;
   display: flex;
-  justify-content: center;
-
-
+  justify-content: start;
 }
 
 nav ul li {
-  margin-right: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-right: 40px;
+  /* padding-left: 5px; */
+  /* padding-right: 5px; */
 }
 
 nav ul li:last-child {
@@ -108,8 +136,8 @@ nav ul li:last-child {
 
 nav ul li a{
   text-decoration: none;
-  color: rgb(0, 0, 0);
-
+  color: rgb(255, 255, 255);
+  
 }
 
 nav ul li a:hover{
@@ -118,31 +146,20 @@ nav ul li a:hover{
 
 
 header .login{
-  border: black 1px dashed;
-  background-color: #DDA820;
+  /* border: black 1px dashed; */
+  /* background-color: #404EED; */
   text-decoration: none;
   color: rgb(0, 0, 0);
 
   /* padding-top: 10px;
   padding-bottom: 10px; */
   padding: 10px;
-  width: 20%;
+  /* width: 20%; */
   min-height: 40px;
   text-align: end;
 
-
 }
 
-
-
-
-
-
-
-
-
-
-/* main */
 
 /* .standard_container_box{
   border: black 1px dashed;
@@ -151,11 +168,9 @@ header .login{
   background-color: yellowgreen;
 } */
 
-
-
 /* section_1 */
 .section_1{
-  background-color: #00008B;
+  /* background-color: #404EED; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,20 +180,79 @@ header .login{
   padding-right: auto; */
   padding-top: 40px;
   padding-bottom: 40px;
+  border: solid 1px black;
 
 }
 
 .box_section1{
-  background-color: #EE82EE;
-  border: black 1px dashed;
-  width: 50%;
+  /* background-color: #EE82EE; */
+  /* border: black 1px dashed; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  width: 60%;
   min-height: 300px;
+  /* text-align: center; */
+  border: solid 1px black;
+  
+}
 
+.box_section1 .title{
+  width: 90%;
+  margin: 20px;
+  /* font-weight: 800; */
+  font-size: 50px;
+  font-weight: 800;
+  border: solid 1px black;
+
+  
+}
+
+.box_section1 .description{
+  width: 100%;
+  line-height: 1.625;
+  margin-bottom: 20px;
+  text-align: center;
+  border: solid 1px black;
+  
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center; */
+  align-content: center;
+  border: solid 1px black;
+  /* margin: 20px; */
+
+}
+
+.download_app_button{
+  color: hsl(205.71deg 9.09% 15.1%);
+  font-size: 18px;
 
 }
 
 
+.browser_app_button{
+  color: white;
+  background-color: hsl(205.71deg 9.09% 15.1%);
+  font-size: 18px; 
 
+}
+
+.browser_app_button:hover {
+  background-color: hsl(207, 10%, 42%);
+  color: white;
+}
+
+.fa-solid.fa-down-long{
+  font-size: 12px;
+}
+
+
+/* * MAIN //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* section_2 */
 
@@ -202,7 +276,8 @@ header .login{
 
   /* background-color: rgb(255, 51, 0); */ /*solo per vedere e comprendere le dimensioni del container*/
   border: black 1px dashed;
-  width: 60%;
+  /* width: 60%; */
+  width: 80%;
   /* min-height: 300px; */
 
 
@@ -211,7 +286,8 @@ header .login{
 .box1_section2{
   background-color: #1E90FF;
   border: black 1px dashed;
-  width: 60%;
+  /* width: 60%; */
+  width: 80%;
   min-height: 400px;
   
   
@@ -250,7 +326,8 @@ header .login{
 
   /* background-color: rgb(255, 51, 0); */ /*solo per vedere e comprendere le dimensioni del container*/
   border: black 1px dashed;
-  width: 60%;
+  /* width: 60%; */
+  width: 80%;
   /* min-height: 300px; */
 
 
@@ -269,7 +346,8 @@ header .login{
 .box2_section3{
   background-color: #1E90FF;
   border: black 1px dashed;
-  width: 60%;
+  /* width: 60%; */
+  width: 80%;
   min-height: 400px;
 
 
@@ -305,7 +383,8 @@ header .login{
 
   /* background-color: rgb(255, 51, 0); */ /*solo per vedere e comprendere le dimensioni del container*/
   border: black 1px dashed;
-  width: 60%;
+  /* width: 60%; */
+  width: 80%;
   /* min-height: 300px; */
 
 
@@ -314,7 +393,8 @@ header .login{
 .box1_section4{
   background-color: #1E90FF;
   border: black 1px dashed;
-  width: 60%;
+  /* width: 60%; */
+  width: 80%;
   min-height: 400px;
   
   
@@ -348,7 +428,8 @@ header .login{
 .box_section5{
 
   background-color: #228B22;
-  width: 60%;
+  /* width: 60%; */
+  width: 80%;
   min-height: 700px;
   border: black 1px dashed;
 
@@ -382,7 +463,8 @@ header .login{
 
   /* background-color: rgb(255, 51, 0); */ /*solo per vedere e comprendere le dimensioni del container*/
   border: black 1px dashed;
-  width: 60%;
+  /* width: 60%; */
+  width: 80%;
   /* min-height: 300px; */
 
 
@@ -409,6 +491,15 @@ header .login{
 
 /* footer */
 .container_footer{
+  
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
+  
+}
+
+.container_end_page{
   border: black 1px dashed;
   display: flex;
   justify-content: space-between;
@@ -416,9 +507,11 @@ header .login{
   flex-wrap: wrap;
   
   background-color: #7fffd4;
-  width: 60%;
+  /* width: 60%; */
+  width: 80%;
   min-height: 40px;
   padding: 20px 0;
+
 }
 
 #logo_footer{
@@ -432,8 +525,7 @@ header .login{
 footer .button{
   background-color: #ffb6c1;
   border: black 1px dashed;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 5px;
   
 }
