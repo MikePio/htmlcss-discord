@@ -21,6 +21,16 @@
   box-shadow: 0px 5px 20px rgb(56, 56, 56);
 }
 
+/* .title{
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.description{
+  line-height: 1.625;
+  
+} */
+
 header{
   display: flex;
   justify-content: center;
@@ -32,7 +42,7 @@ header{
   min-height: 70px; /* todo provvisorio*/
   padding-top: 10px;
   padding-bottom: 10px;
-
+  
   background-image: url(../img/jumbo.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +53,7 @@ main{
   background-color: rgba(255, 230, 0, 0.296);
   width: 100%;
   min-height: 70px; /* todo provvisorio*/
-
+  
 }
 
 footer{
@@ -57,7 +67,7 @@ footer{
   padding-top: 20px;
   padding-bottom: 0;
   color: rgb(255, 255, 255);
-
+  
 }
 
 
@@ -70,7 +80,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
+  
   /* padding: 10px; */
   /* background-color: #404EED; */
   /* width: 60%; */
@@ -180,7 +190,7 @@ header .login{
   padding-right: auto; */
   padding-top: 40px;
   padding-bottom: 40px;
-  border: solid 1px black;
+  /* border: solid 1px black; */
 
 }
 
@@ -193,17 +203,22 @@ header .login{
   width: 60%;
   min-height: 300px;
   /* text-align: center; */
-  border: solid 1px black;
+  /* border: solid 1px black; */
   
 }
+
 
 .box_section1 .title{
   width: 90%;
   margin: 20px;
   /* font-weight: 800; */
+
   font-size: 50px;
   font-weight: 800;
-  border: solid 1px black;
+  text-align: center;
+
+  /* border: solid 1px black; */
+  /* text-align: center; */
 
   
 }
@@ -213,7 +228,8 @@ header .login{
   line-height: 1.625;
   margin-bottom: 20px;
   text-align: center;
-  border: solid 1px black;
+  font-size: 18px;
+  /* border: solid 1px black; */
   
 }
 
@@ -223,14 +239,14 @@ header .login{
   justify-content: space-around;
   /* justify-content: center; */
   align-content: center;
-  border: solid 1px black;
+  /* border: solid 1px black; */
   /* margin: 20px; */
 
 }
 
 .download_app_button{
   color: hsl(205.71deg 9.09% 15.1%);
-  font-size: 18px;
+  font-size: 20px;
 
 }
 
@@ -267,18 +283,33 @@ header .login{
   
 }
 
+.title_section{
+  color: hsl(205.71deg 9.09% 15.1%);
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.description_section{
+  color: hsl(205.71deg 9.09% 15.1%);
+  line-height: 1.625;
+  font-size: 18px;
+
+}
+
 .container_box_section2{
   display: flex;
   justify-content: center;
   align-items: center;
 
-
-
   /* background-color: rgb(255, 51, 0); */ /*solo per vedere e comprendere le dimensioni del container*/
-  border: black 1px dashed;
+  /* border: black 1px dashed; */
   /* width: 60%; */
   width: 80%;
   /* min-height: 300px; */
+  padding-left: 5px;
+  padding-right: 5px;
+
 
 
 }
@@ -299,6 +330,7 @@ header .login{
   border: black 1px dashed;
   width: 40%;
   min-height: 400px;
+  text-align: left;
 
 
 }
@@ -308,7 +340,7 @@ header .login{
 
 
 
-/* section_3 */
+/* * section_3 //////////////////////////////////////////////////////////////////*/
 .section_3{
   display: flex;
   justify-content: center;
@@ -430,14 +462,39 @@ header .login{
   background-color: #228B22;
   /* width: 60%; */
   width: 80%;
-  min-height: 700px;
+  min-height: 800px;
   border: black 1px dashed;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  text-align: center;
+  margin: 10px;
 
 }
 
+.box_section5 .box1_section2 {
+  align-self: center;
+}
 
+.box_section5 .title_section:nth-child(4){
+  background-image: url(../img/stars.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 25px;
+  padding: 8px;
+  margin-bottom: 30px;
+}
 
+.button .download_app_button.standard_button{
+
+  background-color: #7983F5;
+  color: white;
+
+}
 
 
 
