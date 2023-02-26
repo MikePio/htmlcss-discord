@@ -558,13 +558,13 @@ footer .box2_section2 {
 
 #footer_title{
   color: hsl(226.73deg 58.43% 65.1%);
-  font-size: 29px;
+  font-size: 32px;
   padding-right: 40px;
 }
 
 footer ul li a {
   color: rgb(255, 255, 255);
-  font-size: small;
+  font-size: 16px;
 
   
 }
@@ -659,10 +659,3 @@ footer .button:hover{
   color: white;
 
 }
-
-
-
-
-
-
-
